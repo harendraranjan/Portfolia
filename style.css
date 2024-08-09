@@ -1,3 +1,53 @@
 #wrapper-canvas canvas{
     max-width: 100%;
 }
+.model{
+    display: none; 
+    position:fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(0,0,0,0.5) !important ;
+}
+.model-content{
+    background-color: #333 ;
+    margin: 1% auto;
+    padding: 1.25rem;
+    width: 80% ;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17) !important;
+}
+
+.model-content ul{
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.85em;
+}
+.model-content ul li{
+    border: 1px solid #444;
+    padding: 0.4em 0.8em;
+    border-radius: 50px;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+}
+.closeBtn{
+    font-size: 2rem;
+    color: #646464;
+    float: right;
+
+}
+.closeBtn:hover{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+body.modal-open {
+    overflow: hidden;
+}
+.h1-model{
+    color:#1d4e9d ;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
